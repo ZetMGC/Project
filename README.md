@@ -1,2 +1,2 @@
-# Project
+# The Final Project
 Project
