@@ -9,6 +9,6 @@
   - JQuery Animate
 
 ### Used in the project
-* **RequestAnimationFrame** - Animation of the form display and hiding.
+* **RequestAnimationFrame** - ***Animation of the form display and hiding***.
 * **LocalStorage & HistoryAPI**
-* **Fetch** - Sending a request to the server
+* **Fetch** - ***Sending a request to the server***
