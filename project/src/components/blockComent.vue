@@ -1,38 +1,50 @@
 <template>
-<div class="rectangle">
-    <div class="rec_style1">
-        <img src="imageadasd.png" class="picture_rec">
+    <div class="rectangle">
+      <div class="rec_style1">
+        <img src="../img/imageadasd.png" class="picture_rec">
         <div class="rec_style2">
-            <div class="drupal_coder">Команда Drupal Coder вызвала только положительные впечатления!</div>
-            <div class="rec_style3">
-                <div class="rec_style3_text">Нуреев Александр, менеджер проекта Winamp Russian Community</div>
-            </div>
+          <div class="drupal_coder">Команда Drupal Coder вызвала только положительные впечатления!</div>
+          <div class="rec_style3">
+            <div class="rec_style3_text">Нуреев Александр, менеджер проекта Winamp Russian Community</div>
+          </div>
         </div>
-        <div class="vector_l"><svg xmlns="http://www.w3.org/2000/svg" width="1" height="283" viewBox="0 0 1 283" fill="none">
+        <div class="vector_l">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1" height="283" viewBox="0 0 1 283" fill="none">
             <path opacity="0.2" d="M0.5 0V282.5" stroke="black"/>
-            </svg>
+          </svg>
         </div>
-        <div class="strelka_1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none">
-                <path d="M17 1L1 17L17 33" stroke="#050C33"/>
-              </svg>
+        <div class="strelka_1" @click="changePage(-1)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none">
+            <path d="M17 1L1 17L17 33" stroke="#050C33"/>
+          </svg>
         </div>
-        <div class="pages">
-            01 / 14
-    </div>
-    <div class="strelka_2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none">
+        <div class="pages" id="pageNumber">
+          {{ currentPage.toString().padStart(2, '0') }} / 14
+        </div>
+        <div class="strelka_2" @click="changePage(1)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none">
             <path d="M1 1L17 17L1 33" stroke="#050C33"/>
           </svg>
+        </div>
+      </div>
     </div>
-
-</div>
-</div>
-</template>
+  </template>
   
-  <script>
-
-  </script>
+<script>
+export default {
+  data() {
+    return {
+      currentPage: 1,
+    };
+  },
+  methods: {
+    changePage(delta) {
+      this.currentPage += delta;
+      this.currentPage = Math.max(1, Math.min(this.currentPage, 14));
+    },
+  },
+};
+</script>
   
   <style scoped>
   .rectangle {
@@ -147,7 +159,6 @@
             font-style: normal;
             font-weight: 400;
             line-height: 28px; /* 100% */
-            color: var(--Gray-5, #E0E0E0);
             font-family: Montserrat;
             font-size: 28px;
             font-style: normal;

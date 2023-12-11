@@ -81,9 +81,13 @@
         </div>
     </div>
 </div>
-<div class="rectangles">
-    <div class="tarif_zay">Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!
+<div class="rectangles2">
+    <div class="tarif_zay1">Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!
 
+    </div>
+</div>
+<div class="rectangles2">
+    <div class="tarif_zay2">получить индивидуальный тариф
     </div>
 </div>
   </template>
@@ -95,10 +99,15 @@
   .rectangles {
             display: flex;  
             justify-content: center;
-            height: 720px;
+            height: 690px;
             margin: 0;
         }
-        
+        .rectangles2 {
+            display: flex;  
+            justify-content: center;
+            height: 60px;
+            margin: 0;
+        }
         .rectangle {
             border-radius: 5px;
             width: 390px;
@@ -219,23 +228,30 @@
             color: #ffffff;
         }
         
-        .tarif_zay{
+        .tarif_zay1{
             width: 468px;
-            height: 44px;
-            top: 3971px;
-            left: 486px;
-            opacity: 0.5px; 
-
-            display: flex;
-            justify-content: center;
-            color: rgba(5, 12, 51, 1);
+            color: var(--main-black, #050C33);
+            text-align: center;
+            /* text/16px */
             font-family: Montserrat;
             font-size: 16px;
+            font-style: normal;
             font-weight: 500;
-            line-height: 22px;
-            letter-spacing: 0em;
-            text-align: center;
-
+            line-height: 22px; /* 137.5% */
+            opacity: 0.5;
+            
         }
+        .tarif_zay2{
+                color: var(--main-black, #050C33);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 12px; /* 100% */
+            letter-spacing: 0.72px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            }
   </style>
   
