@@ -1,11 +1,11 @@
 <template>
     <div class="rectangle">
       <div class="rec_style1">
-        <img src="../img/imageadasd.png" class="picture_rec">
+        <img src="../img/image01.png" class="picture_rec">
         <div class="rec_style2">
-          <div class="drupal_coder">Команда Drupal Coder вызвала только положительные впечатления!</div>
+          <div class="drupal_coder">{{ getContent(currentPage) }}</div>
           <div class="rec_style3">
-            <div class="rec_style3_text">Нуреев Александр, менеджер проекта Winamp Russian Community</div>
+            <div class="rec_style3_text">{{ getAuthor(currentPage) }}</div>
           </div>
         </div>
         <div class="vector_l">
@@ -42,6 +42,20 @@ export default {
       this.currentPage += delta;
       this.currentPage = Math.max(1, Math.min(this.currentPage, 14));
     },
+    getContent(page){
+      const contents= [
+      "Команда Drupal Coder вызвала только положительные впечатления!",
+      "Контент 2","Контент 3","Контент 4","Контент 5","Контент 6","Контент 7","Контент 8","Контент 9","Контент 10","Контент 11","Контент 12","Контент 13","Контент 14"
+      ];
+      return contents[page-1] || "";
+    },
+    getAuthor(page){
+      const authors=[
+    "Нуреев Александр, менеджер проекта Winamp Russian Community",
+    "Автор 2","Автор 3","Автор 4","Автор 5","Автор 6","Автор 7","Автор 8","Автор 9","Автор 10","Автор 11","Автор 12","Автор 13","Автор ё1"
+      ];
+      return authors[page-1] || "";
+    }
   },
 };
 </script>
@@ -105,7 +119,7 @@ export default {
             border: 1px solid rgba(0, 0, 0, 0.10);
             background: #FFF;
             box-shadow: 0px 4px 60px 0px rgba(161, 161, 161, 0.25);
-            position: relative; /* Возвращаем position relative для .rec_style1 */
+            position: relative; 
         }
 
         .drupal_coder {

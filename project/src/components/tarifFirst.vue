@@ -6,25 +6,15 @@
         <div class="tarif_chas">в час</div>
         <p class="tarif_vector">__________________________________ </p>
         
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>
+        <div class="tarif_content"> <div v-html="galka"></div>
         ㅤПредоплата от 2 часов</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>
+        <div class="tarif_content"><div v-html="galka"></div>
         ㅤКонсультации и работы по SEO</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>
+        <div class="tarif_content"><div v-html="galka"></div>
         ㅤУслуги дизайнера</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>
+        <div class="tarif_content"><div v-html="galka"></div>
         ㅤСтандартное время реакции</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>
+        <div class="tarif_content"><div v-html="galka"></div>
         ㅤНеиспользованные оплаченные часы переносятся на следующий месяц</div>
         <div class="button-container">
             <button>Оставить заявку!</button>
@@ -36,22 +26,12 @@
         <div class="tarif_price">2000 ₽</div>
         <div class="tarif_chas">в час</div>
         <p class="tarif_vector">__________________________________ </p>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤПредоплата от 10 часов</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤКонсультации и работы по SEO</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤУслуги дизайнера</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤВысокое время реакции –
+        <div class="tarif_content"><div v-html="galka"></div>ㅤПредоплата от 10 часов</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤКонсультации и работы по SEO</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤУслуги дизайнера</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤВысокое время реакции –
             до 2 рабочих дней</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤНеиспользованные часы не переносятся</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤНеиспользованные часы не переносятся</div>
         <div class="button-container">
             <button>Оставить заявку!</button>
         </div>
@@ -61,21 +41,11 @@
         <div class="tarif_price">1800 ₽</div>
         <div class="tarif_chas">в час</div>
         <p class="tarif_vector">__________________________________ </p>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤПредоплата от 100 часов</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤКонсультации и работы по SEO</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤУслуги дизайнера</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤМаксимальное время реакции – в день обращения</div>
-        <div class="tarif_content"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;">
-            <path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/>
-        </svg>ㅤНеиспользованные часы не переносятся</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤПредоплата от 100 часов</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤКонсультации и работы по SEO</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤУслуги дизайнера</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤМаксимальное время реакции – в день обращения</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤНеиспользованные часы не переносятся</div>
         <div class="button-container">
             <button>Оставить заявку!</button>
         </div>
@@ -93,6 +63,15 @@
   </template>
   
   <script>
+        export default{
+            data(){
+                return{
+                    galka: '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" style="width: 13px; height: 10px; flex-shrink: 0;"><path d="M0.15 6C0.05 5.9 0 5.75 0 5.65C0 5.55 0.05 5.4 0.15 5.3L0.85 4.6C1.05 4.4 1.35 4.4 1.55 4.6L1.6 4.65L4.35 7.6C4.45 7.7 4.6 7.7 4.7 7.6L11.4 0.65H11.45C11.65 0.45 11.95 0.45 12.15 0.65L12.85 1.35C13.05 1.55 13.05 1.85 12.85 2.05L4.85 10.35C4.75 10.45 4.65 10.5 4.5 10.5C4.35 10.5 4.25 10.45 4.15 10.35L0.25 6.15L0.15 6Z" fill="#F69C8F"/></svg>'
+                }
+            }
+        }
+
+
   </script>
   
   <style scoped>
