@@ -1,91 +1,91 @@
 <template>
-    <div id="header" class="">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-              <router-link to="/" class="navbar-brand">
-                  <img :src="require('@/img/Drupal.svg')" alt="Логотип">
-              </router-link>
-      
-                <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
-                <span class="navbar-toggler-icon"></span>
-                </button>
-      
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <router-link to="/support" class="nav-link">Поддержка сайтов</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/pricing" class="nav-link">Тарифы</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/portfolio" class="nav-link">Наши работы</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/reviews" class="nav-link">Отзывы</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/contact" class="nav-link">Контакты</router-link>
-                    </li>
-                    </ul>
-                </div>
-                <div class="ml-auto d-flex align-items-center">
-                    <div class="mx-4 number-text">8 800 222-26-73</div>
-                    <div class="language-dropdown" @mouseover="showDropdown" @mouseleave="hideDropdown">
-                        <button
-                          ref="dropdownButton"
-                          class="btn btn-secondary dropdown-toggle"
-                          type="button"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          {{ selectedLanguage }}
-                        </button>
-                        <ul class="dropdown-menu w-60" aria-labelledby="languageDropdown">
-                            <li><a @click="changeLanguage('RU')" class="dropdown-item" href="#">RU</a></li>
-                            <li><a @click="changeLanguage('EN')" class="dropdown-item" href="#">EN</a></li>
+    <div id="header" class="row justify-content-center">
+        <div class="col-8">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <router-link to="/" class="navbar-brand">
+                        <img :src="require('@/img/Drupal.svg')" alt="Логотип">
+                    </router-link>
+          
+                    <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                   <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a to="/support" ref="support" id="support" class="nav-link">Поддержка Drupal</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown" @mouseover="showDropdown" @mouseleave="hideDropdown">
+                                    <a to="/admin" @mouseenter="onMenuMouseEnter" ref="admin" id="admin" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Администрирование</a>
+                                    <ul ref="dropdownContent" class="dropdown-menu animated" @mouseover="onDropdownMouseOver" @mouseleave="hideDropdown" v-if="isDropdownVisible" aria-labelledby="admin">
+                                        <li><a class="dropdown-item" href="#">Действие</a></li>
+                                        <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a to="/promotion" ref="promotion" id="promotion" class="nav-link">Продвижение</a>
+                            </li>
+                            <li class="nav-item">
+                                <a to="/ad" ref="ad" id="ad" class="nav-link">Реклама</a>
+                            </li>
+                            <li class="nav-item">
+                                <a to="/about" ref="about" id="about" class="nav-link dropdown-toggle">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a to="/projects" ref="projects" id="projects" class="nav-link">Проекты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a to="/contacts" ref="contacts" id="contacts" class="nav-link">Контакты</a>
+                            </li>
                         </ul>
-                      </div>
-                </div>
-            </div>
-        </nav>
+                    </div>
+                </div> 
+            </nav>
+        </div>
     </div>
 </template>
   
 <script>
-import * as bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 export default {
-  name: 'LanguageSelector',
-  data() {
-    return {
-      selectedLanguage: 'RU',
-      isDropdownVisible: false
-    };
-  },
-  methods: {
-    changeLanguage(language) {
-        this.selectedLanguage = language;
+    components: {
+        
     },
+    data() {
+        return {
+            isDropdownVisible: false,
+            hideDropdownTimeout: null
+        };
+    },
+    methods: {
     showDropdown() {
-        this.isDropdownVisible = true;
+      clearTimeout(this.hideDropdownTimeout);
+      this.isDropdownVisible = true;
     },
     hideDropdown() {
+      this.hideDropdownTimeout = setTimeout(() => {
         this.isDropdownVisible = false;
+      }, 300); // Меняем таймаут на 300 миллисекунд
     },
-    activateDropdown() {
-        new bootstrap.Dropdown(this.$refs.dropdownButton);
+    onDropdownMouseOver() {
+      // Если мышь внутри меню, не скрывать его
+      clearTimeout(this.hideDropdownTimeout);
+    },
+    onMenuMouseEnter() {
+      // При наведении на ссылку "Меню", не скрывать меню
+      clearTimeout(this.hideDropdownTimeout);
     }
-  },
-  mounted() {
-    this.activateDropdown();
   }
 };
 </script>
@@ -95,21 +95,28 @@ export default {
     background-color: transparent;
 }
 
-.number-text {
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link.dropdown-toggle:hover {
+    border-bottom: 0 solid transparent;
+}
+
+.nav-link {
     color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 14px;
+    cursor: pointer;
+    border-bottom: 0px solid transparent;
 }
 
-.language-dropdown {
-    position: relative; 
+.nav-link:hover {
+    border-bottom: 3px solid #EF4D35;
 }
 
-.dropdown-menu, ul.dropdown-menu {
+.dropdown-menu {
     display: none;
-    background-color: transparent;
+    background-color: #EF4D35;
     border: none;
     min-width: none;
     position: absolute;
@@ -117,23 +124,36 @@ export default {
     left: 0;
     z-index: 1000;
     max-width: fit-content;
-    width: 60px;
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+    text-decoration: none;
+    transition: display ;
 }
-
-.dropdown-menu li a, .dropdown-menu li {
-    width: fit-content;
+  
+.dropdown-menu a {
     color: #FFF;
 }
-  
-.language-dropdown:hover .dropdown-menu {
-    display: block;
-    color: #000;
+
+.animated {
+  animation: fadeIn 0.3s ease-in-out; /* Добавляем анимацию fadeIn */
 }
 
-.btn-secondary {
-    background-color: transparent;
-    border-color: transparent;
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+    background-color: #CF3018;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
+  to {
+    opacity: 1;
+  }
+}
 </style>
   

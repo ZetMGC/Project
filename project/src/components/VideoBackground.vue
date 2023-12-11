@@ -23,11 +23,11 @@
   }
   
   .video-background {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    object-fit: cover;
   }
   
   .video-background video {
