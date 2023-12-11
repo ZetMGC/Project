@@ -21,32 +21,42 @@
                    <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a to="/support" ref="support" id="support" class="nav-link">Поддержка Drupal</a>
+                                <a to="/support" ref="support" id="support" class="nav-link">ПОДДЕРЖКА DRUPAL</a>
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown" @mouseover="showDropdown" @mouseleave="hideDropdown">
-                                    <a to="/admin" @mouseenter="onMenuMouseEnter" ref="admin" id="admin" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Администрирование</a>
+                                    <a to="/admin" @mouseenter="onMenuMouseEnter" ref="admin" id="admin" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">АДМИНИСТРИРОВАНИЕ</a>
                                     <ul ref="dropdownContent" class="dropdown-menu animated" @mouseover="onDropdownMouseOver" @mouseleave="hideDropdown" v-if="isDropdownVisible" aria-labelledby="admin">
-                                        <li><a class="dropdown-item" href="#">Действие</a></li>
-                                        <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                                        <li><a class="dropdown-item" href="#">МИГРАЦИЯ</a></li>
+                                        <li><a class="dropdown-item" href="#">БЭКАПЫ</a></li>
+                                        <li><a class="dropdown-item" href="#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+                                        <li><a class="dropdown-item" href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a></li>
+                                        <li><a class="dropdown-item" href="#">ПЕРЕЕЗД НА HTTPS</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a to="/promotion" ref="promotion" id="promotion" class="nav-link">Продвижение</a>
+                                <a to="/promotion" ref="promotion" id="promotion" class="nav-link">ПРОДВИЖЕНИЕ</a>
                             </li>
                             <li class="nav-item">
-                                <a to="/ad" ref="ad" id="ad" class="nav-link">Реклама</a>
+                                <a to="/ad" ref="ad" id="ad" class="nav-link">РЕКЛАМА</a>
                             </li>
                             <li class="nav-item">
-                                <a to="/about" ref="about" id="about" class="nav-link dropdown-toggle">О нас</a>
+                                <div class="dropdown" @mouseover="showDropdown" @mouseleave="hideDropdown">
+                                    <a to="/about" @mouseenter="onMenuMouseEnter" ref="about" id="about" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">О НАС</a>
+                                    <ul ref="dropdownContent" class="dropdown-menu animated" @mouseover="onDropdownMouseOver" @mouseleave="hideDropdown" v-if="isDropdownVisible" aria-labelledby="admin">
+                                        <li><a class="dropdown-item" href="#">КОМАНДА</a></li>
+                                        <li><a class="dropdown-item" href="#">DRUPALGIVE</a></li>
+                                        <li><a class="dropdown-item" href="#">КУРСЫ DRUPAL</a></li>
+                                        <li><a class="dropdown-item" href="#">ВАКАНСИИ</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <a to="/projects" ref="projects" id="projects" class="nav-link">Проекты</a>
+                                <a to="/projects" ref="projects" id="projects" class="nav-link">ПРОЕКТЫ</a>
                             </li>
                             <li class="nav-item">
-                                <a to="/contacts" ref="contacts" id="contacts" class="nav-link">Контакты</a>
+                                <a to="/contacts" ref="contacts" id="contacts" class="nav-link">КОНТАКТЫ</a>
                             </li>
                         </ul>
                     </div>
@@ -91,6 +101,16 @@ export default {
 </script>
   
 <style scoped>
+a {
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+#navbarNav {
+    margin-top: 10px;
+}
+
 #header nav {
     background-color: transparent;
 }

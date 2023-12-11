@@ -24,6 +24,7 @@ body {
 
 #app {
   height: 1080px;
+  overflow-x: hidden;
 }
 
 </style>
