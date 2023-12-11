@@ -1,6 +1,6 @@
 <template>
     <div id="header" class="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
               <router-link to="/" class="navbar-brand">
                   <img :src="require('@/img/Drupal.svg')" alt="Логотип">
@@ -49,10 +49,10 @@
                         >
                           {{ selectedLanguage }}
                         </button>
-                        <div v-if="isDropdownVisible" class="dropdown-menu custom-dropdown" aria-labelledby="languageDropdown">
-                          <a @click="changeLanguage('RU')" class="dropdown-item" href="#">RU</a>
-                          <a @click="changeLanguage('EN')" class="dropdown-item" href="#">EN</a>
-                        </div>
+                        <ul class="dropdown-menu w-60" aria-labelledby="languageDropdown">
+                            <li><a @click="changeLanguage('RU')" class="dropdown-item" href="#">RU</a></li>
+                            <li><a @click="changeLanguage('EN')" class="dropdown-item" href="#">EN</a></li>
+                        </ul>
                       </div>
                 </div>
             </div>
@@ -73,7 +73,6 @@ export default {
   methods: {
     changeLanguage(language) {
         this.selectedLanguage = language;
-        // Здесь вы можете добавить логику для изменения языка в вашем приложении
     },
     showDropdown() {
         this.isDropdownVisible = true;
@@ -92,6 +91,10 @@ export default {
 </script>
   
 <style scoped>
+#header nav {
+    background-color: transparent;
+}
+
 .number-text {
     color: #FFF;
     font-size: 18px;
@@ -99,37 +102,37 @@ export default {
     font-weight: 500;
     line-height: 14px;
 }
+
 .language-dropdown {
     position: relative; 
 }
-  
 
-.dropdown-menu {
+.dropdown-menu, ul.dropdown-menu {
     display: none;
+    background-color: transparent;
+    border: none;
+    min-width: none;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1000;
     max-width: fit-content;
+    width: 60px;
 }
 
-.custom-dropdown {
-    width: 150px; 
-    max-height: 200px;
-    overflow-y: auto; 
-  }
-
-.dropdown-menu a {
+.dropdown-menu li a, .dropdown-menu li {
     width: fit-content;
+    color: #FFF;
 }
   
 .language-dropdown:hover .dropdown-menu {
     display: block;
+    color: #000;
 }
 
 .btn-secondary {
-    background-color: transparent; /* Прозрачный фон */
-    border-color: transparent; /* Прозрачная граница */
+    background-color: transparent;
+    border-color: transparent;
   }
   
 </style>
