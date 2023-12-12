@@ -1,25 +1,27 @@
 <template>
     <div id="header" class="row justify-content-center">
-        <div class="col-8">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="col-12 col-xl-7 custom-col">
+            <nav class="navbar navbar-expand-sm navbar-expand-md navbar-dark" id="lgHeader">
                 <div class="container">
-                    <router-link to="/" class="navbar-brand">
-                        <img :src="require('@/img/Drupal.svg')" alt="Логотип">
-                    </router-link>
-          
+
+                  <a class="navbar-brand" href="#">
+                    <img class="navbar-brand" :src="require('@/img/Drupal.svg')" alt="Логотип">
+                  </a>
+
                     <button
                     class="navbar-toggler"
                     type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
                     aria-controls="navbarNav"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                     >
                     <span class="navbar-toggler-icon"></span>
                     </button>
+
                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav sm-fixed-bottom ml-auto">
                             <li class="nav-item">
                                 <a to="/support" ref="support" id="support" class="nav-link">ПОДДЕРЖКА DRUPAL</a>
                             </li>
@@ -62,6 +64,79 @@
                     </div>
                 </div> 
             </nav>
+
+            <nav class="navbar px-4 fixed-bottom navbar-dark" id="smHeader">
+              <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav sm-fixed-bottom ml-auto">
+                    <li class="nav-item">
+                      <a to="/support" ref="support" id="support" class="nav-link">ПОДДЕРЖКА DRUPAL</a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <a class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#adminPanel" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            АДМИНИСТРИРОВАНИЕ
+                          </a>
+                        </h2>
+                        <div id="adminPanel" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                          <ul ref="dropdownContent" class="accordion-body" aria-labelledby="admin">
+                            <li><a class="dropdown-item" href="#">МИГРАЦИЯ</a></li>
+                            <li><a class="dropdown-item" href="#">БЭКАПЫ</a></li>
+                            <li><a class="dropdown-item" href="#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+                            <li><a class="dropdown-item" href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a></li>
+                            <li><a class="dropdown-item" href="#">ПЕРЕЕЗД НА HTTPS</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a to="/promotion" ref="promotion" id="promotion" class="nav-link">ПРОДВИЖЕНИЕ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a to="/ad" ref="ad" id="ad" class="nav-link">РЕКЛАМА</a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <a class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#panelAbout" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            О НАС
+                          </a>
+                        </h2>
+                        <div id="panelAbout" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                          <ul ref="dropdownContent" class="accordion-body" aria-labelledby="admin">
+                            <li><a class="dropdown-item" href="#">КОМАНДА</a></li>
+                            <li><a class="dropdown-item" href="#">DRUPALGIVE</a></li>
+                            <li><a class="dropdown-item" href="#">КУРСЫ DRUPAL</a></li>
+                            <li><a class="dropdown-item" href="#">ВАКАНСИИ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a to="/projects" ref="projects" id="projects" class="nav-link">ПРОЕКТЫ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a to="/contacts" ref="contacts" id="contacts" class="nav-link">КОНТАКТЫ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <img class="navbar-brand" :src="require('@/img/Drupal.svg')" alt="Логотип">
+
+              <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
         </div>
     </div>
 </template>
@@ -79,66 +154,100 @@ export default {
         };
     },
     methods: {
-    showDropdown() {
-      clearTimeout(this.hideDropdownTimeout);
-      this.isDropdownVisible = true;
-    },
-    hideDropdown() {
-      this.hideDropdownTimeout = setTimeout(() => {
-        this.isDropdownVisible = false;
-      }, 300); // Меняем таймаут на 300 миллисекунд
-    },
-    onDropdownMouseOver() {
-      // Если мышь внутри меню, не скрывать его
-      clearTimeout(this.hideDropdownTimeout);
-    },
-    onMenuMouseEnter() {
-      // При наведении на ссылку "Меню", не скрывать меню
-      clearTimeout(this.hideDropdownTimeout);
+      showDropdown() {
+        clearTimeout(this.hideDropdownTimeout);
+        this.isDropdownVisible = true;
+      },
+      hideDropdown() {
+        this.hideDropdownTimeout = setTimeout(() => {
+          this.isDropdownVisible = false;
+        }, 300); // Меняем таймаут на 300 миллисекунд
+      },
+      onDropdownMouseOver() {
+        // Если мышь внутри меню, не скрывать его
+        clearTimeout(this.hideDropdownTimeout);
+      },
+      onMenuMouseEnter() {
+        // При наведении на ссылку "Меню", не скрывать меню
+        clearTimeout(this.hideDropdownTimeout);
+      }
     }
-  }
 };
 </script>
   
 <style scoped>
 a {
-    font-size: 12px;
-    font-family: Montserrat;
-    font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  transition: border 0.1s ease-in-out;
 }
 
-#navbarNav {
-    margin-top: 10px;
+#smHeader ul {
+  padding: 10px;
 }
 
-#header nav {
-    background-color: transparent;
+#smHeader ul.accordion-body {
+  padding: 0px 0px 0px 8px;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+a.accordion-button {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-.nav-link.dropdown-toggle:hover {
+a.dropdown-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#lgHeader #navbarNav {
+  margin-top: 10px;
+}
+
+#lgHeader {
+  background-color: transparent;
+  display: none;
+}
+
+@media screen and (min-width: 690px) {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .navbar-brand {
+    padding: 0px;
+  }
+
+  img.navbar-brand {
+    padding: 10px 0px 0px 0px;
+  }
+
+  .nav-link.dropdown-toggle:hover {
     border-bottom: 0 solid transparent;
-}
+  }
 
-.nav-link {
+  .nav-link {
     color: #FFF;
     cursor: pointer;
     border-bottom: 0px solid transparent;
-}
+  }
 
-.nav-link:hover {
+  .nav-link:hover {
     border-bottom: 3px solid #EF4D35;
-}
+  }
 
-.dropdown-menu {
+  .dropdown-menu {
     display: none;
     background-color: #EF4D35;
     border: none;
-    min-width: none;
+    min-width: 0;
     position: absolute;
     top: 100%;
     left: 0;
@@ -147,33 +256,106 @@ a {
     color: rgb(255, 255, 255);
     border-radius: 0;
     text-decoration: none;
-    transition: display ;
-}
-  
-.dropdown-menu a {
+  }
+
+  .dropdown-menu a {
     color: #FFF;
-}
+  }
 
-.animated {
-  animation: fadeIn 0.3s ease-in-out; /* Добавляем анимацию fadeIn */
-}
+  .animated {
+    animation: fadeIn 0.3s ease-in-out; /* Добавляем анимацию fadeIn */
+  }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-  animation: fadeIn 0.3s ease-in-out;
-}
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
 
-.dropdown-menu a:hover {
+  .dropdown-menu a:hover {
     background-color: #CF3018;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
-@keyframes fadeIn {
+@media (min-width: 690px) {
+  #lgHeader {
+    display: block;
+  }
+  #smHeader {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1450px) and (max-width: 1700px) {
+  .custom-col {
+    width: 70%; /* Например, 25% ширины экрана */
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+  .custom-col {
+    width: 80%; /* Например, 25% ширины экрана */
+  }
+}
+
+@media (min-width: 690px) and (max-width: 1000px) {
+  .custom-col {
+    width: 100%; /* Например, 25% ширины экрана */
+  }
+  .container {
+    margin: 0;
+  }
+}
+
+#smHeader {
+  background-color: black;
+}
+
+#smHeader a {
+  color: white;
+  cursor: pointer;
+}
+
+#smHeader button{
+  border: none;
+}
+
+#smHeader .dropdown-menu a:hover {
+  background-color: black;
+}
+
+#smHeader .navbar-nav .dropdown-menu  {
+  background-color: black;
+  border-radius: 0;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+#smHeader .nav-link, .accordion-button {
+  border-bottom: 1px solid #312A2A;
+}
+
+@keyframes sliding {
   from {
-    opacity: 0;
+    height: 0%;
   }
   to {
-    opacity: 1;
+    height: 100%;
   }
 }
+
+#smHeader .dropdown-item {
+  border-bottom: 1px solid #312A2A;
+}
+
 </style>
   
