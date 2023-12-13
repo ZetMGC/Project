@@ -68,6 +68,7 @@ export default {
             height: 100vh;
             margin: 0;
             position: relative;
+            
         }
 
         .picture_rec {
@@ -182,4 +183,56 @@ export default {
             margin-top: 204px;
             position: absolute;
         }
+        @media only screen and (max-width: 600px) {
+            .rectangle {
+              height: auto;
+            }
+            .picture_rec {
+              width: 100%;
+              max-width: 200px; 
+              height: auto;
+              margin-top: 20px;
+              margin-left: 10px;
+              position: static;
+            }
+            .rec_style3 {
+              width: 100%;
+              max-width: 380px;
+              height: auto;
+              margin-left: 0;
+              margin-top: 20px;
+              position: static;
+            }
+            .rec_style3_text {
+              width: 100%;
+              max-width: 380px; 
+              height: auto;
+              margin-top: 10px;
+              position: static;
+            }
+
+            .rec_style2 {
+              width: 100%;
+              max-width: 440px; 
+              height: auto;
+              margin-left: 0;
+              margin-top: 20px;
+              margin-right: 0;
+              margin-bottom: 20px;
+              position: static;
+            }
+
+            .rec_style1 {
+              width: 100%;
+              height: auto;
+            }
+            .drupal_coder {
+              width: 100%;
+              font-size: 18px;
+              line-height: 1.5; 
+              position: static;
+            }
+            
+          }
+
   </style>
