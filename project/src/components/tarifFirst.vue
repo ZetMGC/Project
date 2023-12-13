@@ -232,5 +232,21 @@
             text-decoration-line: underline;
             text-transform: uppercase;
             }
+
+
+            @media only screen and (max-width: 600px){
+                .rectangles{
+                    flex-direction: column;
+                    height: auto;
+                }
+                .rectangle {
+                 width: 100%;
+                 margin: 0 0 25px 0;
+                }
+                .rectangle:hover{
+                    width: 100%;
+                    height: 1;
+                }
+            }
   </style>
   
