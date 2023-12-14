@@ -20,6 +20,7 @@
   <style scoped>
   .video-container {
     position: relative;
+    z-index: -1000;
   }
   
   .video-background {

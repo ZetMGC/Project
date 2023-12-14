@@ -20,7 +20,7 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
 
-                   <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav sm-fixed-bottom ml-auto">
                             <li class="nav-item">
                                 <a to="/support" ref="support" id="support" class="nav-link">ПОДДЕРЖКА DRUPAL</a>
