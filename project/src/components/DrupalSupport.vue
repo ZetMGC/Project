@@ -1,19 +1,14 @@
 <template>
   <div id="support">
     <div class="row justify-content-center">
-      <div class="col">
-        <div class="row justify-content-center">
-          <div class="col-4">
-            <h1>Поддержка сайтов на Drupal</h1>
-            <p class="lead">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
-            <a id="tariffBtn" class="btn btn-outline-primary" type="button" href="#">ТАРИФЫ</a>
-          </div>
-          <div id="merits" class="col-5">
-            <div class="row">
-              <MeritItem v-for="merit in merits" :merit="merit" :key="merit.id"/>
-            </div>
-
-          </div>
+      <div id="MainDrupal">
+        <h1>Поддержка сайтов на Drupal</h1>
+        <p class="lead">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
+        <a id="tariffBtn" class="btn btn-outline-primary" type="button" href="#">ТАРИФЫ</a>
+      </div>
+      <div id="merits">
+        <div class="row">
+          <MeritItem v-for="merit in merits" :merit="merit" :key="merit.id"/>
         </div>
       </div>
     </div>
@@ -42,29 +37,9 @@ export default {
 </script>
 
 <style scoped>
-#support {
-  font-family: Montserrat;
-  margin-top: 130px;
-}
 
 h1, p {
   color: #FFFFFF;
-}
-
-p {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 28px;
-  margin-top: 15px;
-  opacity: 0.8;
-}
-
-h1 {
-  font-style: normal;
-  font-weight: 700;
-  line-height: 60px;
-  font-size: 52px;
 }
 
 a {
@@ -78,15 +53,161 @@ a {
   --bs-border-width: 3px;
 }
 
-#merits {
-  margin-left: 50px;
+#support {
+  width: 100%;
 }
 
-h3 {
-  font-size: 48px;
+#MainDrupal a {
+  margin-top: 50px;
+  margin-left: 10%;
 }
 
-#tariffBtn {
-  margin-top: 55px;
+#MainDrupal {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1890px) {
+  #merits {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 690px) {
+
+  #support {
+    font-family: Montserrat;
+    margin-top: 130px;
+  }
+
+  #MainDrupal {
+    width: 28%;
+  }
+
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top: 15px;
+    opacity: 0.8;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 52px;
+  }
+
+  #merits {
+    margin-left: 50px;
+    width: 30%;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  #tariffBtn {
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 1410px) and (max-width: 1890px) {
+  #merits {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1410px) {
+  #merits {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  #MainDrupal {
+    width: 80%;
+  }
+
+  #MainDrupal h1 {
+    text-align: center;
+  }
+
+  #MainDrupal p {
+    text-align: center;
+  }
+
+  #merits {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #MainDrupal a {
+    margin-left: 35%;
+  }
+
+  #support {
+    margin-top: 0px;
+  }
+
+  #merits {
+    width: 60%;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 1000px) {
+  #MainDrupal a {
+    margin-left: 30%;
+  }
+
+  #merits {
+    width: 75%;
+    margin-left: 20%;
+  }
+
+  #support {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 690px) {
+  #MainDrupal a {
+    margin-left: 20%;
+  }
+
+  #merits {
+    width: 100%;
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 590px) {
+  #merits {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 540px) {
+  #merits {
+    width: 98%;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #MainDrupal a {
+    margin-left: 0px;
+    padding: 15px 80px;
+  }
+
+  #merits {
+    width: 98%;
+    margin-left: 10%;
+  }
 }
 </style>

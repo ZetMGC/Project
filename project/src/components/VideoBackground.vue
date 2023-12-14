@@ -27,14 +27,33 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     object-fit: cover;
   }
   
   .video-background video {
-    width: 100%;
-    height: auto;
+    height: 100%;
   }
-  
+
+  @media screen and (min-width: 1200px) {
+    .video-background video {
+      width: 100%;
+      height: auto;
+    }
+
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    .video-background {
+      height: 800px;
+    }
+  }
+
   </style>
   
