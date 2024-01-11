@@ -10,39 +10,43 @@
           </div>
           <div id="second" class="col"></div>
         </div>
-      <div id="compet" class="row">
-        <div class="compet-block">
-          <img src="../img/competency-1.svg" alt="с1" class="c">
-          <p>Добавление информации на сайт, создание новых разделов</p>
+      <div class="col-lg-11">
+        <div id="compet" class="row justify-content-center">
+          <div class="compet-block">
+            <img src="../img/competency-1.svg" alt="с1" class="c">
+            <p>Добавление информации на сайт, создание новых разделов</p>
+          </div>
+          <div class="compet-block">
+            <img src="../img/competency-2.svg" alt="с1" class="c">
+            <p>Разработка и оптимизация модулей сайта</p>
+          </div>
+          <div class="compet-block">
+            <img src="../img/competency-3.svg" alt="с1" class="c">
+            <p>Интеграция с CRM, 1C, платежными системами, любыми веб-сервисами</p>
+          </div>
+          <div class="compet-block">
+            <img src="../img/competency-4.svg" alt="с1" class="c">
+            <p>Любые доработки фунционала и дизайна</p>
+          </div>
+          <div class="compet-block">
+            <img src="../img/competency-5.svg" alt="с1" class="c">
+            <p>Аудит и мониторинг безопасности Drupal сайтов</p>
+          </div>
+          <div class="compet-block">
+            <img src="../img/competency-6.svg" alt="с1" class="c">
+            <p>Миграция, импорт контент и апгрейд Drupal</p>
+          </div>
+          <div class="compet-block">
+            <img src="../img/competency-7.svg" alt="с1" class="c">
+            <p>Оптимизация и ускорение Drupal-сайтов</p>
+          </div>
+          <div class="compet-block">
+            <img src="../img/competency-8.svg" alt="с1" class="c">
+            <p>Веб-маркетинг, консультаци и работы по SEO</p>
+          </div>
         </div>
-        <div class="compet-block">
-          <img src="../img/competency-2.svg" alt="с1" class="c">
-          <p>Разработка и оптимизация модулей сайта</p>
-        </div>
-        <div class="compet-block">
-          <img src="../img/competency-3.svg" alt="с1" class="c">
-          <p>Интеграция с CRM, 1C, платежными системами, любыми веб-сервисами</p>
-        </div>
-        <div class="compet-block">
-          <img src="../img/competency-4.svg" alt="с1" class="c">
-          <p>Любые доработки фунционала и дизайна</p>
-        </div>
-        <div class="compet-block">
-          <img src="../img/competency-5.svg" alt="с1" class="c">
-          <p>Аудит и мониторинг безопасности Drupal сайтов</p>
-        </div>
-        <div class="compet-block">
-          <img src="../img/competency-6.svg" alt="с1" class="c">
-          <p>Миграция, импорт контент и апгрейд Drupal</p>
-        </div>
-        <div class="compet-block">
-          <img src="../img/competency-7.svg" alt="с1" class="c">
-          <p>Оптимизация и ускорение Drupal-сайтов</p>
-        </div>
-        <div class="compet-block">
-          <img src="../img/competency-8.svg" alt="с1" class="c">
-          <p>Веб-маркетинг, консультаци и работы по SEO</p>
-        </div>
+
+
       </div>
     </div>
   </div>
@@ -87,7 +91,7 @@ h2 {
 
 #compet {
   margin-top: 50px;
-  margin-left: 230px;
+  margin-left: 250px;
 }
 
 .compet-block {

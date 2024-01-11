@@ -4,6 +4,7 @@
       <HeaderMenu />
       <DrupalSupport/>
       <DrupalCompetencies/>
+      <DrupalSupp/>
     </div>
 </template>
 
@@ -12,7 +13,7 @@ import HeaderMenu from "@/components/HeaderMenu.vue";
 import VideoBackground from "@/components/VideoBackground.vue";
 import DrupalSupport from "@/components/DrupalSupport.vue";
 import DrupalCompetencies from "@/components/DrupalCompetencies.vue"
-
+import DrupalSupp from "@/components/DrupalSupp.vue"
 
 export default {
   components: {
@@ -20,6 +21,7 @@ export default {
     VideoBackground,
     DrupalSupport,
     DrupalCompetencies,
+    DrupalSupp
   },
 };
 </script>
