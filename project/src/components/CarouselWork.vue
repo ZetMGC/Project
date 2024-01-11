@@ -2,13 +2,13 @@
   <div class="sliders-container row col-12 ">
   <swiper class="slider"
       :modules="modules"
-          :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1300:{ slidesPerView:5, } }"
-      :space-between="50"
+          :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1500:{ slidesPerView:5, } }"
+      :space-between="20"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
-      v-autoplay="autoplay"
+          :autoplay="autoplay[0]"
   >
-    <swiper-slide class="img-slider"><img src="../../public/images/img1.png"></swiper-slide>
+    <swiper-slide class="img-slider"><img src="../../public/images/img1.png " ></swiper-slide>
     <swiper-slide class="img-slider"><img src="../../public/images/img4.jpg"></swiper-slide>
     <swiper-slide class="img-slider"><img src="../../public/images/img2.png"></swiper-slide>
     <swiper-slide class="img-slider"><img src="../../public/images/img3.png"></swiper-slide>
@@ -16,13 +16,13 @@
     <swiper-slide class="img-slider"><img src="../../public/images/img7.png"></swiper-slide>
     <swiper-slide class="img-slider"><img src="../../public/images/img6.png"></swiper-slide>
   </swiper>
-  <swiper class="slider"
+  <swiper class="slider2"
           :modules="modules"
-          :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1300:{ slidesPerView:5 } }"
-          :space-between="50"
+          :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1530:{ slidesPerView:5 } }"
+          :space-between="20"
           @swiper="onSwiper"
           @slideChange="onSlideChange"
-          v-autoplay="autoplay"
+          :autoplay="autoplay[1]"
   >
     <swiper-slide class="img-slider"><img src="../../public/images/img8.png"></swiper-slide>
     <swiper-slide class="img-slider"><img src="../../public/images/img9.png"></swiper-slide>
@@ -65,10 +65,10 @@ export default {
       console.log('slide change');
     };
     const modules = [Navigation, Pagination, Scrollbar, A11y, Autoplay];
-    const autoplay = {
-      delay: 5000,
-      disableOnInteraction: false,
-    };
+    const autoplay =  [
+      { delay: 5000, disableOnInteraction: false},
+      { delay: 7000, disableOnInteraction: false},
+    ];
     return {
       onSwiper,
       onSlideChange,
@@ -80,8 +80,15 @@ export default {
 </script>
 <style scoped>
 .slider {
-  margin: 20px;
   postion: relative;
+  margin-left: 20px;
+  height: 125px;
+}
+.slider2 {
+  position: relative;
+  margin-top:20px;
+  margin-left: 20px;
+  height: 125px;
 }
 .img-slider {
   positon: relative;
@@ -89,12 +96,18 @@ export default {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 2px solid #afa7a7;
-  border-radius: 15px;
+  border: 1px solid #afa7a7;
+  border-radius: 7px;
+  width: 291px;
+  height: 155px;
 }
-.img-slider img {
+
+.img-slider {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
+
 .sliders-container {
   display: flex;
   flex-direction: row;

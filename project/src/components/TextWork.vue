@@ -16,15 +16,16 @@
 
 <style scoped>
 #weWork {
-  font-size: 42px;
+  font-size: 52px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-align: center;
+
 }
 #description {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
