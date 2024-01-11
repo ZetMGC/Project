@@ -1,4 +1,5 @@
 <template>
+    <h1>Тарифы</h1>
 <div class="rectangles">
     <div class="rectangle">
         <div class="tarif_name">Стартовый</div>
@@ -15,7 +16,7 @@
         <div class="tarif_content"><div v-html="galka"></div>
         ㅤСтандартное время реакции</div>
         <div class="tarif_content"><div v-html="galka"></div>
-        ㅤНеиспользованные оплаченные часы переносятся на следующий месяц</div>
+        ㅤНеиспользованные <br>оплаченные часы переносятся на следующий месяц</div>
         <div class="button-container">
             <button>Оставить заявку!</button>
         </div>
@@ -44,7 +45,7 @@
         <div class="tarif_content"><div v-html="galka"></div>ㅤПредоплата от 100 часов</div>
         <div class="tarif_content"><div v-html="galka"></div>ㅤКонсультации и работы по SEO</div>
         <div class="tarif_content"><div v-html="galka"></div>ㅤУслуги дизайнера</div>
-        <div class="tarif_content"><div v-html="galka"></div>ㅤМаксимальное время реакции – в день обращения</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤМаксимальное время реакции – <br>в день обращения</div>
         <div class="tarif_content"><div v-html="galka"></div>ㅤНеиспользованные часы не переносятся</div>
         <div class="button-container">
             <button>Оставить заявку!</button>
@@ -76,10 +77,11 @@
   
   <style scoped>
   .rectangles {
+  margin-top:5%;
             display: flex;  
             justify-content: center;
             height: 690px;
-            margin: 0;
+            margin: 1;
         }
         .rectangles2 {
             display: flex;  
@@ -123,13 +125,13 @@
 
         .tarif_price {
             width: 197.43px;
-            height: 5%;
+            height: 6%;
             color: rgba(5, 12, 51, 1);
             margin-top: 0;
             margin-left: 15%;
             font-family: Montserrat;
             font-size: 50px;
-            font-weight: 900;
+            font-weight: 700;
             letter-spacing: 0em;
             text-align: left;
         }
@@ -232,7 +234,17 @@
             text-decoration-line: underline;
             text-transform: uppercase;
             }
-
+            h1 {
+                margin-top: 10%;
+                color: var(--main-black, #050C33);
+                text-align: center;
+            font-family: Montserrat;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 1;
+    }
 
             @media only screen and (max-width: 600px){
                 .rectangles{
@@ -247,6 +259,7 @@
                     width: 100%;
                     height: 1;
                 }
+                
             }
   </style>
   
