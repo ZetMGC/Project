@@ -1,0 +1,140 @@
+<template>
+  <div class="container-fluid row">
+    <div class="text col">
+      <div class="header">
+        Оставить заявку на <br>
+        поддержку сайта <br>
+      </div>
+      <div class="mainText">
+        Срочно нужна поддержка сайта? Ваша команда не успевает <br>
+          справиться самостоятельно или предыдущий подрядчик не <br>
+        справился с работой? Тогда вам точно к нам! Просто оставьте <br>
+        заявку и наш менеджер с вами свяжется!
+      </div>
+      <div class="tel"><img src="../../public/images/phone-line%20(2).png">8 800 222-26-73</div>
+      <div class="e-mail"><img src="../../public/images/mail.png">info@drupal-coder.ru</div>
+
+    </div>
+    <div class="formDrupal col">
+      <form>
+        <input type="text" class="form-control" name="fullName" placeholder="Ваше имя" >
+        <input type="tel" class="form-control" name="phone" placeholder="Телефон" pattern="[0-9]+" required >
+      </form>
+    </div>
+  </div>
+</template>
+
+<script setup>
+
+</script>
+
+<style scoped>
+* {
+  background-color: #040613;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.text {
+  margin-top: 20px;
+  margin-left: 130px;
+}
+
+.container-fluid {
+  margin-top: 100px;
+  padding-top: 10px;
+}
+
+.header {
+  color: #FFF;
+
+  /* titles/h2 */
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.215;
+  margin-bottom: 20px;
+}
+
+.mainText {
+  color: #FFF;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+  opacity: 0.7;
+}
+
+.tel {
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+  margin-top: 142px;
+}
+
+.tel img {
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+.e-mail {
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  text-decoration-line: underline;
+}
+.e-mail img {
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+.formDrupal > form {
+  padding: 40px;
+}
+.formDrupal > form > .form-control{
+  width: 480px;
+  height: 67px;
+  background-color: #040613; /* Цвет фона */
+  color: #FFF; /* Цвет текста */
+  border-color: #FFFFFF; /* Цвет границы инпута */
+}
+
+.formDrupal > form > .form-control::placeholder {
+  color: white;
+}
+
+.formDrupal > form > .form-control:focus {
+  outline: none;
+  border-color: #EF4D32; /* Оранжевый цвет границы при фокусировке */
+
+}
+
+.fordDrupal {
+  padding: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+</style>

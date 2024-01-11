@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6e24820-f7d6-47c5-a610-85acbfc9118c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project/src/components/DrupalForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/components/CarouselWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/CarouselWork.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/components/TextWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/TextWork.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <workItem from="1703974958706" duration="2240000" />
       <workItem from="1704213147698" duration="4811000" />
       <workItem from="1704275853225" duration="4967000" />
-      <workItem from="1704903553792" duration="26046000" />
+      <workItem from="1704903553792" duration="39356000" />
     </task>
     <servers />
   </component>

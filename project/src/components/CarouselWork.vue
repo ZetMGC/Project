@@ -1,37 +1,39 @@
 <template>
-  <div class="sliders-container row col-12 ">
-  <swiper class="slider"
-      :modules="modules"
-          :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1500:{ slidesPerView:5, } }"
-      :space-between="20"
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
-          :autoplay="autoplay[0]"
-  >
-    <swiper-slide class="img-slider"><img src="../../public/images/img1.png " ></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img4.jpg"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img2.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img3.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img5.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img7.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img6.png"></swiper-slide>
-  </swiper>
-  <swiper class="slider2"
-          :modules="modules"
-          :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1530:{ slidesPerView:5 } }"
-          :space-between="20"
-          @swiper="onSwiper"
-          @slideChange="onSlideChange"
-          :autoplay="autoplay[1]"
-  >
-    <swiper-slide class="img-slider"><img src="../../public/images/img8.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img9.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img10.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img11.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img12.jpg"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img13.png"></swiper-slide>
-    <swiper-slide class="img-slider"><img src="../../public/images/img14.png"></swiper-slide>
-  </swiper>
+  <div class="container-fluid">
+    <div class="sliders-container row col-12 ">
+    <swiper class="slider"
+        :modules="modules"
+            :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1500:{ slidesPerView:5, } }"
+        :space-between="20"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+            :autoplay="autoplay[0]"
+    >
+      <swiper-slide class="img-slider"><img src="../../public/images/img1.png " ></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img4.jpg"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img2.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img3.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img5.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img7.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img6.png"></swiper-slide>
+    </swiper>
+    <swiper class="slider2"
+            :modules="modules"
+            :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1530:{ slidesPerView:5 } }"
+            :space-between="20"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+            :autoplay="autoplay[1]"
+    >
+      <swiper-slide class="img-slider"><img src="../../public/images/img8.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img9.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img10.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img11.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img12.jpg"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img13.png"></swiper-slide>
+      <swiper-slide class="img-slider"><img src="../../public/images/img14.png"></swiper-slide>
+    </swiper>
+    </div>
   </div>
 </template>
 <script>
@@ -95,7 +97,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   border: 1px solid #afa7a7;
   border-radius: 7px;
   width: 291px;
