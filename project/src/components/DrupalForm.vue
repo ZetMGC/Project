@@ -19,6 +19,16 @@
       <form>
         <input type="text" class="form-control" name="fullName" placeholder="Ваше имя" >
         <input type="tel" class="form-control" name="phone" placeholder="Телефон" pattern="[0-9]+" required >
+        <input type="email" class="form-control" name="e-mail" placeholder="E-mail" >
+        <textarea id="message" class="form-control" rows="4" placeholder="Ваш комментарий"></textarea>
+        <div class="checkboxForm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              <p>Отправляя заявку, я даю согласие <a href="https://drupal-coder.ru/privacy-policy" target="_blank"> на обработку своих персональных данных</a> </p>
+            </label>
+          </div>
+        </div>
       </form>
     </div>
   </div>
@@ -115,15 +125,13 @@
 
 }
 
-.fordDrupal {
-  padding: 10px;
-}
 
 .form-control {
   display: block;
   width: 100%;
   height: 36px;
   padding: 6px 12px;
+  margin-top: 20px;
   font-size: 16px;
   line-height: 1.42857143;
   color: #555;
@@ -137,4 +145,37 @@
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
+
+#message {
+  height:120px;
+}
+
+.checkboxForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-check-input {
+  background-color: transparent; /* Прозрачный фон */
+  border: 2px solid #EF4D32; /* Оранжевая окантовка */
+}
+
+.form-check-input:checked {
+  background-color: #EF4D32; /* Оранжевый фон при выборе */
+  border-color: #EF4D32; /* Оранжевая окантовка при выборе */
+}
+.form-check-label p {
+  color: white;
+}
+
+.form-check-label a {
+  color: #EF4D32;
+  text-decoration: none;
+}
+
+.form-check-label a:hover {
+  text-decoration: underline;
+}
+
 </style>
