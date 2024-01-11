@@ -19,7 +19,7 @@
           </svg>
         </div>
         <div class="pages" id="pageNumber">
-          {{ currentPage.toString().padStart(2, '0') }} / 14
+          {{ currentPage.toString().padStart(2, '0') }} / 6
         </div>
         <div class="strelka_2" @click="changePage(1)">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none">
@@ -40,19 +40,19 @@ export default {
   methods: {
     changePage(delta) {
       this.currentPage += delta;
-      this.currentPage = Math.max(1, Math.min(this.currentPage, 14));
+      this.currentPage = Math.max(1, Math.min(this.currentPage, 6));
     },
     getContent(page){
       const contents= [
       "Команда Drupal Coder вызвала только положительные впечатления!",
-      "Контент 2","Контент 3","Контент 4","Контент 5","Контент 6","Контент 7","Контент 8","Контент 9","Контент 10","Контент 11","Контент 12","Контент 13","Контент 14"
+      "Пушечка","Легендарный сайт","","Для чего","Крутящий момент","Контент 7","Контент 8","Контент 9","Контент 10","Контент 11","Контент 12","Контент 13","Контент 14"
       ];
       return contents[page-1] || "";
     },
     getAuthor(page){
       const authors=[
     "Нуреев Александр, менеджер проекта Winamp Russian Community",
-    "Автор 2","Автор 3","Автор 4","Автор 5","Автор 6","Автор 7","Автор 8","Автор 9","Автор 10","Автор 11","Автор 12","Автор 13","Автор ё1"
+    "Сиротин Владислав","Даня Леонтьев","Денис Муха","Денис я не знаю","Марат Калинов","Автор 7","Автор 8","Автор 9","Автор 10","Автор 11","Автор 12","Автор 13","Автор ё1"
       ];
       return authors[page-1] || "";
     }
@@ -223,7 +223,7 @@ export default {
             }
 
             .rec_style1 {
-              width: 100%;
+              width: 95%;
               height: auto;
             }
             .drupal_coder {
@@ -232,7 +232,53 @@ export default {
               line-height: 1.5; 
               position: static;
             }
+            .pages{
+            color: var(--main-black, #050C33);
+            font-family: Montserrat;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 100% */
+            font-family: Montserrat;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            margin-left: 40%;
+            margin-top: 2px;
+        }
+        .strelka_1{
+            width: 16px;
+            height: 32px;
             
+            flex-shrink: 0;
+            stroke-width: 1px;
+            stroke: var(--main-black, #050C33);
+            margin-top: 0px;
+            margin-left: 35%;
+            position: absolute;
+        }
+        .strelka_2{
+            width: 16px;
+            height: 32px;
+            flex-shrink: 0;
+            stroke-width: 1px;
+            stroke: var(--main-black, #050C33);
+            margin-left: 60%;
+            margin-top: 0px;
+            position: absolute;
+
+        }
+        .vector_l {
+            margin-top: 0px;
+            margin-left: 0PX;
+            width: 0px;
+            height: 282.5px;
+            stroke-width: 1px;
+            stroke: #000;
+            opacity: 1.;
+            position: absolute;
+        }
           }
 
   </style>

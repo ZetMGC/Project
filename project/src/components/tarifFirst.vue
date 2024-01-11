@@ -15,7 +15,7 @@
         <div class="tarif_content"><div v-html="galka"></div>
         ㅤСтандартное время реакции</div>
         <div class="tarif_content"><div v-html="galka"></div>
-        ㅤНеиспользованные оплаченные часы переносятся на следующий месяц</div>
+        ㅤНеиспользованные <br>оплаченные часы переносятся на следующий месяц</div>
         <div class="button-container">
             <button>Оставить заявку!</button>
         </div>
@@ -44,7 +44,7 @@
         <div class="tarif_content"><div v-html="galka"></div>ㅤПредоплата от 100 часов</div>
         <div class="tarif_content"><div v-html="galka"></div>ㅤКонсультации и работы по SEO</div>
         <div class="tarif_content"><div v-html="galka"></div>ㅤУслуги дизайнера</div>
-        <div class="tarif_content"><div v-html="galka"></div>ㅤМаксимальное время реакции – в день обращения</div>
+        <div class="tarif_content"><div v-html="galka"></div>ㅤМаксимальное время реакции – <br>в день обращения</div>
         <div class="tarif_content"><div v-html="galka"></div>ㅤНеиспользованные часы не переносятся</div>
         <div class="button-container">
             <button>Оставить заявку!</button>
@@ -123,13 +123,13 @@
 
         .tarif_price {
             width: 197.43px;
-            height: 5%;
+            height: 6%;
             color: rgba(5, 12, 51, 1);
             margin-top: 0;
             margin-left: 15%;
             font-family: Montserrat;
             font-size: 50px;
-            font-weight: 900;
+            font-weight: 700;
             letter-spacing: 0em;
             text-align: left;
         }
