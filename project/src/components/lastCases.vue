@@ -5,7 +5,7 @@
     <div class="col-md-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Колонка 1</h5>
+          <h5 class="card-title"><img src="../img/case_1.png"></h5>
           <p class="card-text">Содержимое колонки 1.</p>
         </div>
       </div>
@@ -57,6 +57,13 @@
 </script>
 
 <style>
+h5 img{
+    
+    width: 380px;
+height: 215px;
+flex-shrink: 0;
+border-radius: 5px;
+}
  h1 {
         color: var(--main-black, #050C33);
         text-align: center;
