@@ -7,6 +7,7 @@
       <DrupalSupp/>
       <expertise-drupal/>
       <tarifFirst/>
+      <drupal-tasks/>
       <blockComent/>
       <teamDrupal/>
       <lastCases/>
@@ -32,6 +33,7 @@ import FAQAccordion from "@/components/FAQAccordion.vue";
 import TextWork from "@/components/TextWork.vue";
 import CarouselWork from "@/components/CarouselWork.vue";
 import DrupalForm from "@/components/DrupalForm.vue";
+import DrupalTasks from "@/components/DrupalTasks.vue";
 
 export default {
   components: {
@@ -49,6 +51,7 @@ export default {
     DrupalForm,
      TextWork,
      CarouselWork,
+    DrupalTasks
   },
 };
 </script>
