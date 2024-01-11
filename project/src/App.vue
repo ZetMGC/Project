@@ -9,7 +9,6 @@
        <tarifFirst/>
       <blockComent/>
       <teamDrupal/>
-      </template>
     </div>
 </template>
 
@@ -31,7 +30,7 @@ export default {
     DrupalSupport,
     DrupalCompetencies,
     DrupalSupp,
-    ExpertiseDrupal
+    ExpertiseDrupal,
     tarifFirst, 
     blockComent, 
     teamDrupal,
