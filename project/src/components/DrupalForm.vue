@@ -29,6 +29,7 @@
             </label>
           </div>
         </div>
+        <button type="button" class="btn btn-danger">Свяжитесь с нами</button>
       </form>
     </div>
   </div>
@@ -46,7 +47,7 @@
 }
 
 .text {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 130px;
 }
 
@@ -80,7 +81,7 @@
 .tel {
   color: #FFFFFF;
   font-family: Montserrat;
-  font-size: 32px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 48px */
@@ -176,6 +177,13 @@
 
 .form-check-label a:hover {
   text-decoration: underline;
+}
+.btn {
+  width: 480px;
+  height: 60px;
+}
+.e-mail {
+  margin-top: 10px;
 }
 
 </style>
