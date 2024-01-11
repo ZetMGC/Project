@@ -7,7 +7,7 @@
           <div class="rec_style3">
             <div class="rec_style3_text">{{ getAuthor(currentPage) }}</div>
           </div>
-        </div>
+        </div>  
         <div class="vector_l">
           <svg xmlns="http://www.w3.org/2000/svg" width="1" height="283" viewBox="0 0 1 283" fill="none">
             <path opacity="0.2" d="M0.5 0V282.5" stroke="black"/>
