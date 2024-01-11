@@ -5,6 +5,7 @@
       <DrupalSupport/>
       <DrupalCompetencies/>
       <DrupalSupp/>
+      <expertise-drupal/>
     </div>
 </template>
 
@@ -14,6 +15,7 @@ import VideoBackground from "@/components/VideoBackground.vue";
 import DrupalSupport from "@/components/DrupalSupport.vue";
 import DrupalCompetencies from "@/components/DrupalCompetencies.vue"
 import DrupalSupp from "@/components/DrupalSupp.vue"
+import ExpertiseDrupal from "@/components/ExpertiseDrupal.vue";
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     VideoBackground,
     DrupalSupport,
     DrupalCompetencies,
-    DrupalSupp
+    DrupalSupp,
+    ExpertiseDrupal
   },
 };
 </script>

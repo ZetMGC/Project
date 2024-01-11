@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid" style="margin-top: 160px">
+  <div class="container-fluid" style="margin-top: 100px; margin-bottom: -120px">
     <div class="row justify-content-center">
       <div class="col-lg-11 col-xs-12 col-sm-10 col-md-12">
         <h2 class="text-center">
