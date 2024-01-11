@@ -6,9 +6,10 @@
       <DrupalCompetencies/>
       <DrupalSupp/>
       <expertise-drupal/>
-       <tarifFirst/>
+      <tarifFirst/>
       <blockComent/>
       <teamDrupal/>
+      <FAQAccordion/>
     </div>
 </template>
 
@@ -22,6 +23,7 @@ import ExpertiseDrupal from "@/components/ExpertiseDrupal.vue";
 import tarifFirst from './components/tarifFirst.vue'
 import blockComent from './components/blockComent.vue'
 import teamDrupal from './components/teamDrupal.vue';
+import FAQAccordion from "@/components/FAQAccordion.vue";
 
 export default {
   components: {
@@ -34,6 +36,7 @@ export default {
     tarifFirst, 
     blockComent, 
     teamDrupal,
+    FAQAccordion
   },
 };
 </script>
