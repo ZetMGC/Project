@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6e24820-f7d6-47c5-a610-85acbfc9118c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project/src/components/DrupalForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/components/DrupalTasks.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/components/CarouselWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/CarouselWork.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/components/FAQAccordion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/FAQAccordion.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +42,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;denmukhaTest&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Programs\\JetBrains\\WebStorm 2023.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -74,6 +75,7 @@
       <workItem from="1704213147698" duration="4811000" />
       <workItem from="1704275853225" duration="4967000" />
       <workItem from="1704903553792" duration="39356000" />
+      <workItem from="1705008828810" duration="3495000" />
     </task>
     <servers />
   </component>
