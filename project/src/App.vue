@@ -10,6 +10,9 @@
       <blockComent/>
       <teamDrupal/>
       <FAQAccordion/>
+      <TextWork/>
+      <CarouselWork/>
+      <DrupalForm/>
     </div>
 </template>
 
@@ -24,6 +27,9 @@ import tarifFirst from './components/tarifFirst.vue'
 import blockComent from './components/blockComent.vue'
 import teamDrupal from './components/teamDrupal.vue';
 import FAQAccordion from "@/components/FAQAccordion.vue";
+import TextWork from "@/components/TextWork.vue";
+import CarouselWork from "@/components/CarouselWork.vue";
+import DrupalForm from "@/components/DrupalForm.vue";
 
 export default {
   components: {
@@ -36,7 +42,10 @@ export default {
     tarifFirst, 
     blockComent, 
     teamDrupal,
-    FAQAccordion
+    FAQAccordion,
+    DrupalForm,
+     TextWork,
+     CarouselWork,
   },
 };
 </script>
@@ -45,6 +54,8 @@ export default {
 
 body {
   margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 </style>
