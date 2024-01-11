@@ -38,6 +38,7 @@ export default {
 
 <style scoped>
 
+
 h1, p {
   color: #FFFFFF;
 }
@@ -55,6 +56,7 @@ a {
 
 #support {
   width: 100%;
+  overflow-x: hidden ;
 }
 
 #MainDrupal a {
@@ -76,7 +78,7 @@ a {
 
   #support {
     font-family: Montserrat;
-    margin-top: 130px;
+    margin-top: 70px;
   }
 
   #MainDrupal {
@@ -100,7 +102,6 @@ a {
   }
 
   #merits {
-    margin-left: 50px;
     width: 30%;
   }
 
@@ -112,6 +113,7 @@ a {
     margin-top: 55px;
   }
 }
+
 
 @media (min-width: 1410px) and (max-width: 1890px) {
   #merits {
@@ -208,6 +210,12 @@ a {
   #merits {
     width: 98%;
     margin-left: 10%;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 740px){
+  #merits {
+    width: 80%;
   }
 }
 </style>

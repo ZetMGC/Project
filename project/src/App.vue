@@ -3,6 +3,7 @@
       <VideoBackground />
       <HeaderMenu />
       <DrupalSupport/>
+      <DrupalCompetencies/>
     </div>
 </template>
 
@@ -10,12 +11,15 @@
 import HeaderMenu from "@/components/HeaderMenu.vue";
 import VideoBackground from "@/components/VideoBackground.vue";
 import DrupalSupport from "@/components/DrupalSupport.vue";
+import DrupalCompetencies from "@/components/DrupalCompetencies.vue"
+
 
 export default {
   components: {
-    HeaderMenu, 
+    HeaderMenu,
     VideoBackground,
     DrupalSupport,
+    DrupalCompetencies,
   },
 };
 </script>
@@ -23,11 +27,6 @@ export default {
 <style>
 body {
   margin: 0;
-}
-
-#app {
-  height: 1080px;
-  overflow-x: hidden;
 }
 
 </style>

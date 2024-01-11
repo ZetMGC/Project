@@ -64,7 +64,9 @@ img {
   border-left: 3px solid #EF4D35;
 }
 
-@media screen and (max-width: 590px) {
+
+
+@media screen and (max-width: 1200px) {
   .merit {
     margin-bottom: 0px;
   }
@@ -75,8 +77,6 @@ img {
     margin-right: 0px;
     width: 140px;
   }
-
-
 
   .merit div {
     padding-right: 0px;
