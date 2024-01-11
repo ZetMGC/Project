@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-7 col-lg-6 expertise">Только системный подход – контроль версий, резервирование и тестирование!</div>
         <div class="col-7 col-lg-6 expertise">Только Drupal сайты, не берем на поддержку сайты на других CMS!</div>
-        <div class="col-7 col-lg-6 expertise">Участвуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем свои модули Drupal</div>
+        <div class="col-7 col-lg-6 expertise">Участвуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем <a> свои модули Drupal</a></div>
         <div class="col-7 col-lg-6 expertise">Поддерживаем сайты на Drupal 5, 6, 7 и 8</div>
       </div>
     </div>
@@ -33,6 +33,16 @@ h2 {
   font-size: 42px;
   margin-bottom: 65px;
   color: white;
+}
+
+.expertise a {
+  color: #f14d34;
+  cursor: pointer;
+}
+
+.expertise a:hover {
+  color: #f14d34;
+  text-decoration: underline;
 }
 
 .expertise-img img {
