@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" style="margin-top: 40px">
     <div class="col">
       <h2 class="text-center">Наши разработчики <br> выполняют быстро любые задачи</h2>
     </div>
@@ -75,5 +75,12 @@ h2 {
 
 .competency {
   padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 30px;
+  }
 }
 </style>

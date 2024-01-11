@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6e24820-f7d6-47c5-a610-85acbfc9118c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project/src/components/DrupalTasks.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/components/FAQAccordion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/FAQAccordion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/components/DrupalTasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/DrupalTasks.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,8 @@
       <workItem from="1704213147698" duration="4811000" />
       <workItem from="1704275853225" duration="4967000" />
       <workItem from="1704903553792" duration="39356000" />
-      <workItem from="1705008828810" duration="3495000" />
+      <workItem from="1705008828810" duration="3648000" />
+      <workItem from="1705012613023" duration="1156000" />
     </task>
     <servers />
   </component>
