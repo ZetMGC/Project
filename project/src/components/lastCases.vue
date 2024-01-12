@@ -104,7 +104,7 @@ line-height: 22px; /* 157.143% */
 }
 
  h1 {
-    
+    margin-top: 18%;
         color: var(--main-black, #050C33);
         text-align: center;
         font-family: Montserrat;

@@ -8,9 +8,10 @@
       <expertise-drupal/>
       <tarifFirst/>
       <drupal-tasks/>
-      <blockComent/>
       <teamDrupal/>
+     
       <lastCases/>
+      <blockComent/>
       <FAQAccordion/>
       <TextWork/>
       <CarouselWork/>
@@ -26,9 +27,9 @@ import DrupalCompetencies from "@/components/DrupalCompetencies.vue"
 import DrupalSupp from "@/components/DrupalSupp.vue"
 import ExpertiseDrupal from "@/components/ExpertiseDrupal.vue";
 import tarifFirst from './components/tarifFirst.vue'
-import blockComent from './components/blockComent.vue'
 import teamDrupal from './components/teamDrupal.vue';
 import lastCases from './components/lastCases.vue';
+import blockComent from './components/blockComent.vue'
 import FAQAccordion from "@/components/FAQAccordion.vue";
 import TextWork from "@/components/TextWork.vue";
 import CarouselWork from "@/components/CarouselWork.vue";
@@ -44,9 +45,10 @@ export default {
     DrupalSupp,
     ExpertiseDrupal,
     tarifFirst, 
-    blockComent, 
     teamDrupal,
+    
     lastCases,
+    blockComent,
     FAQAccordion,
     DrupalForm,
      TextWork,

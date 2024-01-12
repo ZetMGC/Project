@@ -1,4 +1,5 @@
 <template>
+  <h1>Отзывы</h1>
     <div class="rectangle">
       <div class="rec_style1">
         <img src="../img/image01.png" class="picture_rec">
@@ -65,7 +66,7 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 50vh;
             margin: 0;
             position: relative;
             
@@ -184,6 +185,18 @@ export default {
             margin-top: 204px;
             position: absolute;
         }
+        h1 {
+                margin-top: 10%;
+                color: var(--main-black, #050C33);
+                text-align: center;
+            font-family: Montserrat;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 1;
+    }
+
         @media only screen and (max-width: 700px) {
             .rectangle {
               height: auto;
