@@ -49,9 +49,6 @@ export default {
 
     tarifFirst, 
 
-    tarifFirst,
-    blockComent,
-
     teamDrupal,
     
     lastCases,
