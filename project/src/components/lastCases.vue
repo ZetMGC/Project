@@ -28,7 +28,7 @@
       <div class="card">
         <div class="image-container">
           <h7 class="card-title_3"><img src="../img/case_3_.png"></h7>
-          <div class="text-overlay">Настройка выгрузки YML для Яндекс.Маркета</div>
+          <div class="text-overlay_2">Настройка выгрузки YML для Яндекс.Маркета</div>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
       <div class="card">
         <div class="image-container">
           <h5 class="card-title"><img src="../img/case_4_.png"></h5>
-          <div class="text-overlay">Настройка выгрузки YML для Яндекс.Маркета</div>
+          <div class="text-overlay_3">Настройка выгрузки YML для Яндекс.Маркета</div>
         </div>
       </div>
     </div>
@@ -104,6 +104,7 @@ line-height: 22px; /* 157.143% */
 }
 
  h1 {
+    
         color: var(--main-black, #050C33);
         text-align: center;
         font-family: Montserrat;
@@ -116,6 +117,7 @@ line-height: 22px; /* 157.143% */
 
 
     .image-container img {
+        
         border-radius: 5px;
       width: 100%;
       height: auto;
@@ -136,10 +138,71 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
     }
+    .text-overlay_2 {
+      position: absolute;
+      top: 85%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #FFF;
+
+/* titles/h4 */
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+
+    .text-overlay_3 {
+      position: absolute;
+      top: 85%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #FFF;
+
+/* titles/h4 */
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
 
     .card-title_3{
         width: 780px;
 height: 475px;
 flex-shrink: 0;
     }
+    .card,
+    .card-body,
+    .card-title,
+    .card-text,
+    .border-0 {
+      border: none !important;
+    }
+    @media screen and (max-width: 700px) {
+        .text-overlay {
+      position: absolute;
+      top: 80%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #FFF;
+
+/* titles/h4 */
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+    .image-container{
+        margin-top: 3%;
+        margin: center;
+    }
+    }
+
+    
 </style>
