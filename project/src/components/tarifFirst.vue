@@ -1,6 +1,6 @@
 <template>
     <h1>Тарифы</h1>
-<div class="rectangles">
+<div id="tariffs" class="rectangles">
     <div class="rectangle">
         <div class="tarif_name">Стартовый</div>
         <div class="tarif_price">2000 ₽</div>

@@ -4,7 +4,7 @@
       <div id="MainDrupal">
         <h1>Поддержка сайтов на Drupal</h1>
         <p class="lead">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
-        <a id="tariffBtn" class="btn btn-outline-primary" type="button" href="#">ТАРИФЫ</a>
+        <a id="tariffBtn" class="btn btn-outline-primary" type="button" href="#tariffs">ТАРИФЫ</a>
       </div>
       <div id="merits">
         <div class="row">
