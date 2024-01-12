@@ -114,6 +114,7 @@ export default {
         }
 
         .rec_style1 {
+
             width: 980px;
             height: 416px;
             border-radius: 5px;
@@ -248,35 +249,37 @@ export default {
             margin-top: 2px;
         }
         .strelka_1{
-            width: 16px;
-            height: 32px;
-            
-            flex-shrink: 0;
-            stroke-width: 1px;
-            stroke: var(--main-black, #050C33);
-            margin-top: 0px;
-            margin-left: 35%;
-            position: absolute;
+          width: 16px;
+      height: 32px;
+      flex-shrink: 0;
+      stroke-width: 1px;
+      stroke: var(--main-black, #050C33);
+      position: absolute; 
+      margin-top: 0px; 
+      margin-left: 30%;
+      margin-right: auto;
+      display: block;
         }
-        .strelka_2{
-            width: 16px;
-            height: 32px;
-            flex-shrink: 0;
-            stroke-width: 1px;
-            stroke: var(--main-black, #050C33);
-            margin-left: 60%;
-            margin-top: 0px;
-            position: absolute;
-
-        }
+    .strelka_2 {
+      width: 16px;
+      height: 32px;
+      flex-shrink: 0;
+      stroke-width: 1px;
+      stroke: var(--main-black, #050C33);
+      position: relative; 
+      margin-top: 10px; 
+      margin-left: 62%;
+      margin-right: auto;
+      display: block;
+    }
         .vector_l {
             margin-top: 0px;
             margin-left: 0PX;
             width: 0px;
             height: 282.5px;
-            stroke-width: 1px;
+            stroke-width: 0px;
             stroke: #000;
-            opacity: 1.;
+            opacity: 0.;
             position: absolute;
         }
           }
