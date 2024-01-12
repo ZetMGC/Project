@@ -183,7 +183,7 @@ export default {
             margin-top: 204px;
             position: absolute;
         }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 700px) {
             .rectangle {
               height: auto;
             }
