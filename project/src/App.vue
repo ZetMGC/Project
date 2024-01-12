@@ -12,10 +12,7 @@
       <teamDrupal/>
       <lastCases/>
       <FAQAccordion/>
-<<<<<<< HEAD
       <working-with-us/>
-=======
->>>>>>> b5c57e30155102e1c36f28f4ec322be4393542eb
       <CarouselWork/>
       <DrupalForm/>
     </div>
@@ -54,7 +51,7 @@ export default {
     DrupalForm,
      CarouselWork,
     DrupalTasks,
-    WorkingWithUs
+    WorkingWithUs,
   },
 };
 </script>
