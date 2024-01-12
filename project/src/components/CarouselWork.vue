@@ -81,15 +81,12 @@ export default {
 };
 </script>
 <style scoped>
+
 .slider {
-  postion: relative;
-  margin-left: 20px;
   height: 125px;
 }
 .slider2 {
-  position: relative;
   margin-top:20px;
-  margin-left: 20px;
   height: 125px;
 }
 .img-slider {
@@ -113,6 +110,10 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.container-fluid {
+  max-width: 95%;
 }
 
 </style>

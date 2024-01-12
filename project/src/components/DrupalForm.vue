@@ -1,5 +1,5 @@
 <template>
-  <div class="cont row">
+  <div class="container-fluid row justify-content-center" style="margin-top: 100px;">
     <div class="text col">
       <div class="header">
         Оставить заявку на <br>
@@ -33,8 +33,21 @@
       </form>
     </div>
   </div>
-  <div class="footer row">
-
+  <div class="container-fluid row justify-content-center " style="margin:0;padding: 0">
+    <div class="footer">
+        <div class="icons ">
+          <ul class="list">
+            <li><a href="https://www.facebook.com/initlabkr/" target="_blank"> <img src="../../public/images/free-icon-facebook-1077041.png" width="35px" height="35px" style="background-color: red; border-radius: 10px"></a> </li>
+            <li><a href="https://vk.com/initlab" target="_blank"> <img src="../../public/images/free-icon-vk-2111828.png" width="35px" height="35px" style="background-color: red; border-radius: 10px"></a> </li>
+            <li><a href="https://teleg.one/initlabbot" target="_blank"> <img src="../../public/images/free-icon-telegram-739260.png"  width="35p" height="35px" style="background-color: red; border-radius: 10px"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCyFEbngMB-bK2ulNtd_W43A" target="_blank"> <img src="../../public/images/free-icon-youtube-1077046.png" width="35px" height="35px" style="background-color: red; border-radius: 10px"></a> </li>
+          </ul>
+        </div>
+      <div class="textOfFooter">
+        Проект ООО «Инитлаб», Краснодар, Россия.<br>
+        Drupal является зарегистрированной торговой маркой Dries Buytaert.
+      </div>
+    </div>
   </div>
 </template>
 
@@ -48,15 +61,14 @@
   font-family: Montserrat;
 }
 
+
+
 .text {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 130px;
 }
 
-.container-fluid {
-  margin-top: 100px;
-  padding-top: 10px;
-}
+
 
 .header {
   color: #FFF;
@@ -132,7 +144,6 @@
 .form-control {
   display: block;
   width: 100%;
-  height: 36px;
   padding: 6px 12px;
   margin-top: 20px;
   font-size: 16px;
@@ -188,12 +199,67 @@
 .e-mail {
   margin-top: 10px;
 }
-
 .footer {
   background-color: #040613;
-  height: 200px;
+  border-top: 1px solid grey;
+}
+
+.list {
+  margin-top: 40px;
+  margin-left: 20px;
+  list-style-type: none;
+  display: flex;
+}
+
+.list > li {
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border-radius: 15px;
+  margin: 0 15px;
 }
 
 
+.textOfFooter {
+  margin-left: 130px;
+  color: #afa7a7;
+}
 
+@media screen and (max-width: 611px) {
+  .formDrupal > form > .form-control{
+    width: 200px;
+    height: 67px;
+    margin-left: 0px;
+  }
+  .btn {
+    width: 200px;
+    margin-left: 0px;
+  }
+  .text {
+    margin-left: 20px;
+  }
+  .mainText {
+    font-size: 10px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  .tel {
+    margin-top: 20px;
+  }
+
+.textOfFooter {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+  .list > li {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .formDrupal {
+    margin-left: 80px;
+  }
+}
 </style>
