@@ -1,4 +1,11 @@
 <template>
+  <h1>Отзывы</h1>
+  <h2><svg xmlns="http://www.w3.org/2000/svg" width="212" height="437" viewBox="0 0 212 437" fill="none">
+  <path d="M186.719 0.919922H33.0095C19.0543 0.919922 7.7284 12.2459 7.7284 26.201V179.91C7.7284 193.866 19.0543 205.191 33.0095 205.191H106.578C105.617 245.439 96.2629 277.647 78.5661 301.866C64.6109 320.979 43.4764 336.805 15.2116 349.294C2.2171 355.007 -3.3953 370.378 2.67217 383.221L20.8746 421.649C26.7398 433.985 41.2512 439.396 53.7906 433.985C87.2628 419.525 115.528 401.221 138.583 378.974C166.697 351.822 185.96 321.181 196.376 287.001C206.792 252.821 212 206.203 212 147.045V26.201C212 12.2464 200.673 0.919922 186.719 0.919922Z" fill="#050C33"/>
+</svg></h2>
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="212" height="437" viewBox="0 0 212 437" fill="none">
+  <path d="M186.719 0.919922H33.0095C19.0543 0.919922 7.7284 12.2459 7.7284 26.201V179.91C7.7284 193.866 19.0543 205.191 33.0095 205.191H106.578C105.617 245.439 96.2629 277.647 78.5661 301.866C64.6109 320.979 43.4764 336.805 15.2116 349.294C2.2171 355.007 -3.3953 370.378 2.67217 383.221L20.8746 421.649C26.7398 433.985 41.2512 439.396 53.7906 433.985C87.2628 419.525 115.528 401.221 138.583 378.974C166.697 351.822 185.96 321.181 196.376 287.001C206.792 252.821 212 206.203 212 147.045V26.201C212 12.2464 200.673 0.919922 186.719 0.919922Z" fill="#050C33"/>
+</svg></h3>
     <div class="rectangle">
       <div class="rec_style1">
         <img src="../img/image01.png" class="picture_rec">
@@ -35,6 +42,7 @@ export default {
   data() {
     return {
       currentPage: 1,
+
     };
   },
   methods: {
@@ -58,14 +66,37 @@ export default {
     }
   },
 };
+
+
 </script>
   
   <style scoped>
+  h3{
+    margin-top: -5%;
+    margin-left: -5%;
+    width: 211.773px;
+    height: 435.16px;
+    flex-shrink: 0;
+    fill: var(--main-black, #050C33);
+    position: absolute;
+    opacity: 0.3;
+
+  }
+  h2{
+    margin-top: -5%;
+    margin-left: 20%;
+    width: 211.773px;
+    height: 435.16px;
+    flex-shrink: 0;
+    fill: var(--main-black, #050C33);
+    position: absolute;
+    opacity: 0.3;
+  }
   .rectangle {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 50vh;
             margin: 0;
             position: relative;
             
@@ -114,6 +145,7 @@ export default {
         }
 
         .rec_style1 {
+
             width: 980px;
             height: 416px;
             border-radius: 5px;
@@ -183,7 +215,25 @@ export default {
             margin-top: 204px;
             position: absolute;
         }
+        h1 {
+                margin-top: 10%;
+                color: var(--main-black, #050C33);
+                text-align: center;
+            font-family: Montserrat;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 1;
+    }
+
         @media only screen and (max-width: 700px) {
+          h2{
+            display: none
+          }
+          h3{
+            display: none
+          }
             .rectangle {
               height: auto;
             }
@@ -248,35 +298,37 @@ export default {
             margin-top: 2px;
         }
         .strelka_1{
-            width: 16px;
-            height: 32px;
-            
-            flex-shrink: 0;
-            stroke-width: 1px;
-            stroke: var(--main-black, #050C33);
-            margin-top: 0px;
-            margin-left: 35%;
-            position: absolute;
+          width: 16px;
+      height: 32px;
+      flex-shrink: 0;
+      stroke-width: 1px;
+      stroke: var(--main-black, #050C33);
+      position: absolute; 
+      margin-top: 0px; 
+      margin-left: 30%;
+      margin-right: auto;
+      display: block;
         }
-        .strelka_2{
-            width: 16px;
-            height: 32px;
-            flex-shrink: 0;
-            stroke-width: 1px;
-            stroke: var(--main-black, #050C33);
-            margin-left: 60%;
-            margin-top: 0px;
-            position: absolute;
-
-        }
+    .strelka_2 {
+      width: 16px;
+      height: 32px;
+      flex-shrink: 0;
+      stroke-width: 1px;
+      stroke: var(--main-black, #050C33);
+      position: relative; 
+      margin-top: 10px; 
+      margin-left: 62%;
+      margin-right: auto;
+      display: block;
+    }
         .vector_l {
             margin-top: 0px;
             margin-left: 0PX;
             width: 0px;
             height: 282.5px;
-            stroke-width: 1px;
+            stroke-width: 0px;
             stroke: #000;
-            opacity: 1.;
+            opacity: 0.;
             position: absolute;
         }
           }

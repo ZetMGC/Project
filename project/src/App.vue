@@ -8,11 +8,18 @@
       <expertise-drupal/>
       <tarifFirst/>
       <drupal-tasks/>
-      <blockComent/>
       <teamDrupal/>
+     
       <lastCases/>
+      <blockComent/>
       <FAQAccordion/>
+<<<<<<< HEAD
       <working-with-us/>
+=======
+
+      <working-with-us/>
+
+>>>>>>> 6f1b35d218abaf0a141e3bb9de1c979ebf633a7b
       <CarouselWork/>
       <DrupalForm/>
     </div>
@@ -26,9 +33,9 @@ import DrupalCompetencies from "@/components/DrupalCompetencies.vue"
 import DrupalSupp from "@/components/DrupalSupp.vue"
 import ExpertiseDrupal from "@/components/ExpertiseDrupal.vue";
 import tarifFirst from './components/tarifFirst.vue'
-import blockComent from './components/blockComent.vue'
 import teamDrupal from './components/teamDrupal.vue';
 import lastCases from './components/lastCases.vue';
+import blockComent from './components/blockComent.vue'
 import FAQAccordion from "@/components/FAQAccordion.vue";
 import CarouselWork from "@/components/CarouselWork.vue";
 import DrupalForm from "@/components/DrupalForm.vue";
@@ -43,10 +50,13 @@ export default {
     DrupalCompetencies,
     DrupalSupp,
     ExpertiseDrupal,
-    tarifFirst,
-    blockComent,
+
+    tarifFirst, 
+
     teamDrupal,
+    
     lastCases,
+    blockComent,
     FAQAccordion,
     DrupalForm,
      CarouselWork,

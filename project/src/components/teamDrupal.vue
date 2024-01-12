@@ -1,5 +1,6 @@
     <template>
         <div>
+            <p></p>
         <h1>Команда</h1>
     
         <div class="team-container">

@@ -356,10 +356,11 @@
             margin: 1;
     }
 
-            @media only screen and (max-width: 600px){
+            @media only screen and (max-width: 780px){
                 .rectangles{
                     flex-direction: column;
                     height: auto;
+                    
                 }
                 .rectangle {
                  width: 100%;
