@@ -12,7 +12,6 @@
       <teamDrupal/>
       <lastCases/>
       <FAQAccordion/>
-      <TextWork/>
       <CarouselWork/>
       <DrupalForm/>
     </div>
@@ -30,7 +29,6 @@ import blockComent from './components/blockComent.vue'
 import teamDrupal from './components/teamDrupal.vue';
 import lastCases from './components/lastCases.vue';
 import FAQAccordion from "@/components/FAQAccordion.vue";
-import TextWork from "@/components/TextWork.vue";
 import CarouselWork from "@/components/CarouselWork.vue";
 import DrupalForm from "@/components/DrupalForm.vue";
 import DrupalTasks from "@/components/DrupalTasks.vue";
@@ -49,7 +47,6 @@ export default {
     lastCases,
     FAQAccordion,
     DrupalForm,
-     TextWork,
      CarouselWork,
     DrupalTasks
   },

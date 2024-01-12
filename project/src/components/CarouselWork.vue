@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="sliders-container row col-12 ">
+    <div class="sliders-container row ">
     <swiper class="slider"
         :modules="modules"
             :breakpoints="{ 600:{ slidesPerView:2 }, 900:{slidesPerView: 3}, 1500:{ slidesPerView:5, } }"

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid row">
+  <div class="cont row">
     <div class="text col">
       <div class="header">
         Оставить заявку на <br>
@@ -33,6 +33,9 @@
       </form>
     </div>
   </div>
+  <div class="footer row">
+
+  </div>
 </template>
 
 <script setup>
@@ -42,7 +45,6 @@
 <style scoped>
 * {
   background-color: #040613;
-  box-sizing: border-box;
   font-family: Montserrat;
 }
 
@@ -168,6 +170,7 @@
 }
 .form-check-label p {
   color: white;
+  max-width: 480px;
 }
 
 .form-check-label a {
@@ -185,5 +188,12 @@
 .e-mail {
   margin-top: 10px;
 }
+
+.footer {
+  background-color: #040613;
+  height: 200px;
+}
+
+
 
 </style>

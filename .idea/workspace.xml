@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e24820-f7d6-47c5-a610-85acbfc9118c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project/src/components/DrupalTasks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/components/lastCases.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/img/case_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/img/case_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/img/case_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/img/case_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/img/case_5.png" afterDir="false" />
+    <list default="true" id="e6e24820-f7d6-47c5-a610-85acbfc9118c" name="Changes" comment="nbnbnbn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/components/FAQAccordion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/FAQAccordion.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/components/blockComent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/blockComent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/components/tarifFirst.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/tarifFirst.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/components/CarouselWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/CarouselWork.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/components/DrupalForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/components/DrupalForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/components/TextWork.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,10 +76,16 @@
       <workItem from="1704275853225" duration="4967000" />
       <workItem from="1704903553792" duration="39356000" />
       <workItem from="1705009619027" duration="5502000" />
+      <workItem from="1705015564895" duration="3597000" />
+      <workItem from="1705019215577" duration="951000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nbnbnbn" />
+    <option name="LAST_COMMIT_MESSAGE" value="nbnbnbn" />
   </component>
 </project>
