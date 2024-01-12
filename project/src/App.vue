@@ -12,7 +12,7 @@
       <teamDrupal/>
       <lastCases/>
       <FAQAccordion/>
-      <TextWork/>
+      <working-with-us/>
       <CarouselWork/>
       <DrupalForm/>
     </div>
@@ -30,10 +30,10 @@ import blockComent from './components/blockComent.vue'
 import teamDrupal from './components/teamDrupal.vue';
 import lastCases from './components/lastCases.vue';
 import FAQAccordion from "@/components/FAQAccordion.vue";
-import TextWork from "@/components/TextWork.vue";
 import CarouselWork from "@/components/CarouselWork.vue";
 import DrupalForm from "@/components/DrupalForm.vue";
 import DrupalTasks from "@/components/DrupalTasks.vue";
+import WorkingWithUs from "@/components/WorkingWithUs.vue"
 
 export default {
   components: {
@@ -43,15 +43,15 @@ export default {
     DrupalCompetencies,
     DrupalSupp,
     ExpertiseDrupal,
-    tarifFirst, 
-    blockComent, 
+    tarifFirst,
+    blockComent,
     teamDrupal,
     lastCases,
     FAQAccordion,
     DrupalForm,
-     TextWork,
      CarouselWork,
-    DrupalTasks
+    DrupalTasks,
+    WorkingWithUs
   },
 };
 </script>
